@@ -74,7 +74,7 @@ i{
 .wrapper{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     padding: 0 10%;
@@ -111,14 +111,77 @@ p{
 
 }
 
+.btn{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1em 0;
+    /* left:150vw; */
+}
 
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: aliceblue;
+    background-color: saddlebrown;
+    padding: 5px 10px;
+box-shadow: 0 11px 6px rgba(61, 30, 8, 0.327);
+    border-radius: 0 20px;
+}
 
+button:hover{
+    background-color: antiquewhite;
+    color: saddlebrown;
+}
 
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 
+.imgbox #user{
+    position: relative;
+    height: 100vh;
+    width: calc(130%-10vh);
+    /* right: 50px; */
+    border-radius: 10px;
+    top: 10px;
+    right: 50px;
+    animation: animateUser 7s linear infinite;
+    z-index: 110;
+}
 
+@keyframes animateUser {
+50%{
+    right: 30px;
+    top:-50px;
+}
+}
 
+.imgbox #splash{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-90%) rotate(-5deg);
+    width: 160%;
+    /* filter: saturate(200%); */
+    animation: animateUser 7s linear infinite;
+    z-index: 11;
+}
 
-
+@keyframes animate {
+    50%{
+        top:90%;
+        left:51%;
+        width: 150%;
+    }
+    }
 
 @media (max-width: 768px) {
     .logo{
