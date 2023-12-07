@@ -1,0 +1,64 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Grandstander', cursive;
+    background-color: #f0ced9;
+}
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*-------------------------------------------------------- */
+
+.accueil{
+    height: 100vh;
+}
+.flower-container{
+    display: flex;
+    height: 200px;
+    width: fit-content;
+    border-bottom: solid greenyellow;
+   
+}
+
+.flower{
+width: 100px;
+object-fit: cover;
+
+}
+
+.in{
+
+    transform: rotate(30deg);
+}
+.out{
+    transform: rotate(-30deg);
+}
+
+/* #f0ced9
+#d8b2e1
+#f6f7f6
+#f3a6ad  */
+/*-------------------------------------------------------- */
+.about-section{
+   padding: 10px 5%;
+    gap: 10%;
+    align-items: center;
+    height: 100vh;
+}
+.rainbow-gif{
+    height: 500px;
+    width: 500px;
+    border-radius: 70% 40% 70% 40%;
+    object-fit: cover;
+    box-shadow: 20px 2px 2px antiquewhite;
+    opacity: 0.7;
+}
+
+.about-container{
+    width: 50%;
+    
+}
+
+.d-flex{
+    display: flex;
+}
